@@ -1,0 +1,24 @@
+<section id="portfolio"  >
+    <div class="text-xs-center text-lg-center">
+        <div class="col-md-12">
+            <h1>{{project_name}} </h1>
+        </div>
+    </div>
+    <div ng-init="projectList=getProjects(project_name)" class="row text-center pad-top" >
+
+        <div ng-repeat='p in projectList' class=" card text-center col-md-12 col-xs-12" >
+            <div class="card-content">
+                <h3 class="card-header text-xs-center">{{p.name}}</h3>
+                <div class="card-image img-rounded m-x-auto">
+                    <img ng-src="/{{p.image_root}}cover.png" alt="Loading image...">
+                </div>
+                <div class="card-body">
+                    <p> {{p.desc}} </p>
+                </div>
+                <footer class="card-footer">
+                    <a ng-href="{{p.github}}" class="btn btn-default">View Source On Github</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</section>

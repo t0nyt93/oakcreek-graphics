@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "authors": [
+    "Tony <tonytyrrell93@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "ui-router#^0.3.2",
+    "angular": "^1.6.1",
+    "jquery": "^3.1.1"
+  }
+}

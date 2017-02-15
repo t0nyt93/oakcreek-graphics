@@ -1,0 +1,29 @@
+<div class="jumbotron text-center">
+    <h1 class="h1-responsive text-xs-center">Welcome to Oak Creek Graphics!</h1>
+    <p class="lead text-xs-center">OCG is a collaboration of projects focused on Computer Graphics, Parallel Computing and Artificial Intelligence</p>
+    <div class="card-content">
+        <div class="card-image col-md-12 col-xs-12">
+            <img src="/images/main.jpg" class="img-fluid" alt="Loading image...">
+        </div>
+        <footer class="card-footer text-xs-center ">
+            <button class="btn btn-flat btn-warning ">Learn More</button>
+        </footer>
+    </div>
+</div>
+
+<div ng-repeat='projCard in project_cards' class=" card text-center col-md-3 col-xs-12" >
+    <div class="card-content">
+        <h3 class="card-header text-xs-center">{{projCard.headline}}</h3>
+        <div class="card-image img-rounded m-x-auto">
+            <img ng-src="{{projCard.image}}" alt="Loading image...">
+        </div>
+        <div class="card-body">
+            <p> {{projCard.body}} </p>
+        </div>
+        <footer class="card-footer">
+            <button class="btn btn-primary">Explore Projects</button>
+            <button class="btn btn-default">View On Github</button>
+        </footer>
+    </div>
+</div>
+

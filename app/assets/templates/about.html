@@ -1,0 +1,33 @@
+<!--ABOUT SECTION-->
+<div ui-view="nav"> </div>
+<section>
+    <div class="jumbotron col-xs-12 col-xs-12">
+        <div class="row">
+            <hr class="my-6">
+            <h1 class="h1-responsive text-xs-center"><strong>About Me</strong> </h1>
+            <p class="lead">
+            My name is Anthony Tyrrell and I am a Computer Scientist from Oregon State University with an interest in Computer Graphics and Embedded Systems. I currently live in Bend, OR and can found at Mount Bachelor skiing most days out of the week. My other hobbies include backpacking/hiking and I am trying to get into fly fishing and kayaking when the seasons allow.
+            </p>
+
+
+        </div>
+        <div class="row">
+            <div class="col-xs-6 ">
+                <img class="img-rounded img-fluid" src="/images/whoami.jpg" alt="" />
+            </div>
+            <div class="col-xs-2"> </div>
+            <div class="col-xs-4">
+                <p>Programming Proficiencies </p>
+                <ul class="list-group">
+                    <li ng-repeat="x in languages" class="list-group-item">
+                        <span class="tag bg-primary label-pill float-xs-right">{{x.rank}}</span>{{x.name}}
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<!--END ABOUT SECTION-->
+

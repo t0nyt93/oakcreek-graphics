@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Oak Creek Graphics</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag 'application', media: 'all'%>
+        <%= javascript_include_tag 'application' %>
+    </head>
+
+    <body ng-app="routerApp">
+        <!-- MAIN CONTENT -->
+        <div class="container">
+            <div ui-view ></div>
+        </div>
+
+    </body>
+    <footer class="page-footer blue center-on-small-only">
+        <div class="container-fluid">
+            <a href="#"><i class="fa fa-twitter fa-2x"></i> GitHub</a>
+            <a href="#"><i class="fa fa-google-plus fa-2x"></i>LinkedIn</a>
+            <a href="#"><i class="fa fa-google-plus fa-2x"></i>E-Mail</a>
+
+            <!--Copyright-->
+            <div class="text-xl-center">
+                2017 Copyright Oak Creek Graphics: Design - Anthony Tyrrell/Bootstrap
+            </div>
+        </div>
+        <!--/.Copyright-->
+    </footer>
+</html>
